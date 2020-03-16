@@ -9,7 +9,7 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "${var.instance_name} ${count.index}"
-  }
+    ami = ami
 }
 
 variable "instance_name" {

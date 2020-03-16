@@ -9,5 +9,5 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "${var.instance_name} ${count.index}"
-    version = "v1.0.2"
+    version = "v1.0.1"
 }
